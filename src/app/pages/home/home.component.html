@@ -1,0 +1,14 @@
+<h1>Articulos</h1>
+<div class="card-columns">
+    <div class="card" *ngFor="let articulo of articulos">
+        <img [src]="articulo.img" class="card-img-top
+img-fluid" [alt]="articulo.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{ articulo.nombre }}</h5>
+            <p class="card-text"> {{ articulo.descripcion }}
+            </p>
+            <p class="card-text"><small class="text-muted">{{
+articulo.precio }}</small></p>
+        </div>
+    </div>
+</div>
